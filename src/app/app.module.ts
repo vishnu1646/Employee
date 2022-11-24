@@ -8,23 +8,28 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddingemployeeComponent } from './addingemployee/addingemployee.component';
 import { AddempComponent } from './addemp/addemp.component';
 import { SearchComponent } from './search/search.component';
+import { DeleteComponent } from './delete/delete.component';
 
-const myRoute:Routes=[
+const myRoute: Routes = [
   {
-    path:"",
-    component:AdminloginComponent
+    path: "",
+    component: AdminloginComponent
   },
   {
-    path:"Add",
-    component:AddingemployeeComponent
+    path: "Add",
+    component: AddingemployeeComponent
   },
   {
-path:"Adding",
-component:AddempComponent
+    path: "Adding",
+    component: AddempComponent
   },
   {
-    path:"Search",
-    component:SearchComponent
+    path: "Search",
+    component: SearchComponent
+  },
+  {
+    path: "Delete",
+    component: DeleteComponent
   }
 ]
 @NgModule({
@@ -33,7 +38,8 @@ component:AddempComponent
     AdminloginComponent,
     AddingemployeeComponent,
     AddempComponent,
-    SearchComponent
+    SearchComponent,
+    DeleteComponent
   ],
   imports: [
     BrowserModule,
