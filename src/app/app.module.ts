@@ -5,17 +5,23 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AdminloginComponent } from './adminlogin/adminlogin.component';
 import { RouterModule, Routes } from '@angular/router';
+import { AddingemployeeComponent } from './addingemployee/addingemployee.component';
 
 const myRoute:Routes=[
   {
     path:"",
     component:AdminloginComponent
+  },
+  {
+    path:"Add",
+    component:AddingemployeeComponent
   }
 ]
 @NgModule({
   declarations: [
     AppComponent,
-    AdminloginComponent
+    AdminloginComponent,
+    AddingemployeeComponent
   ],
   imports: [
     BrowserModule,
