@@ -9,6 +9,7 @@ import { AddingemployeeComponent } from './addingemployee/addingemployee.compone
 import { AddempComponent } from './addemp/addemp.component';
 import { SearchComponent } from './search/search.component';
 import { DeleteComponent } from './delete/delete.component';
+import { ViewComponent } from './view/view.component';
 
 const myRoute: Routes = [
   {
@@ -30,7 +31,11 @@ const myRoute: Routes = [
   {
     path: "Delete",
     component: DeleteComponent
-  }
+  },
+{
+  path:"View",
+  component:ViewComponent
+}
 ]
 @NgModule({
   declarations: [
@@ -39,7 +44,8 @@ const myRoute: Routes = [
     AddingemployeeComponent,
     AddempComponent,
     SearchComponent,
-    DeleteComponent
+    DeleteComponent,
+    ViewComponent
   ],
   imports: [
     BrowserModule,
