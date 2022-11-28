@@ -6,38 +6,38 @@
             <div class="row g-3">
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-8">
                     <label for="" class="form-label">Name</label>
-                    <input type="text" class="form-control">
+                    <input name ="name" [(ngModel)]="name"  type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-8">
                     <label for="" class="form-label">Designation</label>
-                    <input type="text" class="form-control">
+                    <input name =" designation" [(ngModel)]= "designation" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-6">
                     <label for="" class="form-label">EmailID</label>
-                    <input type="email" name="" id="" class="form-control">
+                    <input emailID="emailID"[(ngModel)]="emailID" type="email" name="" id="" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-6">
                     <label for="" class="form-label">Employee Code</label>
-                    <input type="text" class="form-control">
+                    <input employeeCode="employeeCode"[(ngModel)]="employeeCode" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-6">
                     <label for="" class="form-label">Phone Number</label>
-                    <input type="text" class="form-control">
+                    <input phone ="phno"[(ngModel)]="phno" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-3">
                     <label for="" class="form-label">Year Of Experience</label>
-                    <input type="text" class="form-control">
+                    <input exp ="yoe"[(ngModel)]="yoe" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-3">
                     <label for="" class="form-label">Salary</label>
-                    <input type="text" class="form-control">
+                    <input sal ="sal"[(ngModel)]="sal" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-8">
                     <label for="" class="form-label">Company Website</label>
-                    <input type="text" class="form-control">
+                    <input name="cmpny"[(ngModel)]="cmpny" type="text" class="form-control">
                 </div>
                 <div class="col-12 col-sm-12 col-md-8 col-lg-6 col-xl-3 col-xxl-12">
-                    <button class="btn btn-success">Submit</button>
+                    <button (click) ="readValues()" class="btn btn-success">Submit</button>
                 </div>
             </div>
         </div>

@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./addemp.component.css']
 })
 export class AddempComponent {
+  name=""
+  designation=""
+  emailID=""
+  employeeCode=""
+  phno=""
+  yoe=""
+  sal=""
+  cmpny=""
+
+  readValues =()=>
+  {
+    let data:any ={"Name":this.name,"Designation":this.designation,"ID":this.emailID,"code":this.employeeCode,"Num":this.phno,"exp":this.yoe,"sal":this.sal,"cmpny":this.cmpny}
+    console.log(data)
+  }
+  
 
 }
